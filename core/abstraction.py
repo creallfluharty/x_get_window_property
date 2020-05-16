@@ -50,7 +50,7 @@ def _get_window_property_segment(conn, window_id, property_name_atom_id, offset,
         On the type argument:
             Seeing as the type of a variable is effectively an attribute of that variable, it seems unusual that one
                 would need to know the type of a variable in order to "get" it, especially given that:
-                    1. The X Server (to my understanding) just treats the type field as another arbitrary string.
+                    1. The X Server (to my understanding) just treats the type field as another arbitrary atom.
                     2. The "actual" type is returned
                 What I gather from the manual's documentation on this function [1] is that supplying an incorrect type
                 can be used to get the actual type as well as the format and full length, without getting the value.
